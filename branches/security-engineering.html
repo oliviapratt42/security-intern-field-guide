@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Security Engineering | Security Intern Field Guide</title>
+    <meta name="description" content="A beginner-friendly map of cybersecurity career branches, enterprise context, and CTF skills that transfer into real work.">
+    <link rel="stylesheet" href="../assets/css/style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap header-grid">
+        <a class="brand" href="../index.html">Security Intern Field Guide</a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="../index.html">Home</a>
+          <a href="soc-detection.html">Branches</a>
+          <a href="../ctf-skills-map.html">CTF Map</a>
+          <a href="../glossary.html">Glossary</a>
+        </nav>
+      </div>
+    </header>
+    <main id="content" class="wrap page-shell">
+<h1>Security Engineering</h1>
+<h2>What this branch does</h2>
+<p>Security engineering builds, configures, and improves the systems that help an organization stay secure. Engineers may work on identity, logging, vulnerability management, endpoint protection, secrets handling, network controls, automation, secure defaults, or internal security platforms.</p>
+<p>If SOC work asks “what happened?”, security engineering often asks “how do we make the secure path easier, more reliable, and more measurable?” This branch is close to infrastructure, software delivery, and operations. It rewards people who like building durable systems instead of only finding flaws.</p>
+<h2>Common work</h2>
+<ul>
+<li>Configure and maintain security tools such as EDR, SIEM, scanners, and identity controls.</li>
+<li>Automate repetitive security tasks and evidence collection.</li>
+<li>Improve patching, asset inventory, secrets management, and logging coverage.</li>
+<li>Partner with IT and platform teams to make secure defaults practical.</li>
+<li>Review architecture changes for security impact.</li>
+<li>Build dashboards and metrics that show whether controls are working.</li>
+</ul>
+<h2>Concepts to know</h2>
+<p>Core vocabulary includes asset inventory, hardening, least privilege, segmentation, encryption, key management, patch management, vulnerability management, secure configuration, change management, monitoring, and control validation. Security+ concepts around architecture, identity, cryptography, resilience, and operational security are especially relevant.</p>
+<p>Security engineering is where policy meets implementation. A policy might say “use multifactor authentication,” but an engineer helps decide where it is enforced, what exceptions exist, how failures are monitored, and how users recover access safely.</p>
+<h2>CTF skills that help</h2>
+<p>Cryptography challenges help learners notice when encoding, hashing, encryption, and key handling are being confused. Access control challenges help with least privilege and authorization design. Intercepting communication helps with TLS, proxies, certificates, and service-to-service traffic. Web security challenges can reveal why secure configuration and dependency hygiene matter.</p>
+<p>The most transferable CTF habit is system thinking: when one control fails, what else should limit the damage?</p>
+<h2>Where CTFs differ from industry</h2>
+<p>CTFs often reward bypassing a single weakness. Security engineering is usually about reducing classes of weakness across many systems. The work is slower, more collaborative, and more constrained by uptime, ownership, budgets, user experience, and legacy technology.</p>
+<h2>Beginner next steps</h2>
+<ol>
+<li>Build a small Linux VM and harden one setting at a time, documenting what changed.</li>
+<li>Practice explaining the difference between hashing, encryption, and encoding.</li>
+<li>Learn how environment variables, secret stores, and access keys are used and misused.</li>
+<li>Read a secure configuration benchmark and identify which checks are preventive controls.</li>
+<li>Write a tiny script that turns a manual security check into repeatable output.</li>
+</ol>
+<h2>Public resources</h2>
+<ul>
+<li><a href="https://www.nist.gov/cyberframework">NIST Cybersecurity Framework</a> for control and risk-management context.</li>
+<li><a href="https://www.cisecurity.org/controls">CIS Controls</a> for practical safeguard categories.</li>
+<li><a href="https://openssf.org/projects/scorecard/">OpenSSF Scorecard</a> for open source security health checks.</li>
+<li><a href="https://cheatsheetseries.owasp.org/">OWASP Cheat Sheet Series</a> for implementation-focused security guidance.</li>
+</ul>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>Built as an open starting point for security interns. CTFs are practice environments, not complete models of enterprise security work.</p>
+      </div>
+    </footer>
+  </body>
+</html>

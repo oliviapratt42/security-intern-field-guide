@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Application Security | Security Intern Field Guide</title>
+    <meta name="description" content="A beginner-friendly map of cybersecurity career branches, enterprise context, and CTF skills that transfer into real work.">
+    <link rel="stylesheet" href="../assets/css/style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap header-grid">
+        <a class="brand" href="../index.html">Security Intern Field Guide</a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="../index.html">Home</a>
+          <a href="soc-detection.html">Branches</a>
+          <a href="../ctf-skills-map.html">CTF Map</a>
+          <a href="../glossary.html">Glossary</a>
+        </nav>
+      </div>
+    </header>
+    <main id="content" class="wrap page-shell">
+<h1>Application Security</h1>
+<h2>What this branch does</h2>
+<p>Application security, often called AppSec, helps teams build and maintain safer software. AppSec work sits between security, software engineering, product, and operations. The goal is not only to find bugs. The goal is to help organizations prevent, detect, prioritize, and fix software risk in a way development teams can actually use.</p>
+<p>AppSec can include code review, threat modeling, dependency review, secure design support, vulnerability triage, security testing, training, and coordination with bug bounty or penetration testing programs.</p>
+<h2>Common work</h2>
+<ul>
+<li>Review application designs for authentication, authorization, data flow, and trust boundaries.</li>
+<li>Triage scanner findings, penetration test reports, and reported vulnerabilities.</li>
+<li>Help developers understand and fix issues without vague security language.</li>
+<li>Create secure coding guidance and reusable patterns.</li>
+<li>Tune SAST, DAST, dependency, and secret-scanning tools.</li>
+<li>Connect application risks to business impact and release decisions.</li>
+</ul>
+<h2>Concepts to know</h2>
+<p>Important vocabulary includes input validation, output encoding, authentication, authorization, session management, access control, injection, cross-site scripting, server-side request forgery, insecure deserialization, dependency risk, threat modeling, secure SDLC, and vulnerability severity.</p>
+<p>Security+ vocabulary around identity, cryptography, secure protocols, vulnerability management, and application attacks shows up constantly. AppSec also requires developer empathy: a finding is only useful if it can be understood, reproduced, prioritized, and fixed.</p>
+<h2>CTF skills that help</h2>
+<p>Web security is the clearest match. Beginner web CTFs teach request manipulation, cookies, sessions, parameters, forms, redirects, APIs, and common vulnerability patterns. Access control challenges are especially valuable because many serious application bugs are authorization failures rather than flashy exploits. Intercepting communication helps learners understand how browsers, proxies, and servers exchange data.</p>
+<p>Cryptography challenges can help when they clarify safe versus unsafe uses of tokens, hashes, randomness, and secrets.</p>
+<h2>Where CTFs differ from industry</h2>
+<p>CTF web challenges are often intentionally vulnerable and isolated. Real applications have frameworks, business logic, release deadlines, partial ownership, and compensating controls. In industry, the hard part may be proving impact, finding the right owner, recommending a practical fix, and preventing the same pattern from returning.</p>
+<h2>Beginner next steps</h2>
+<ol>
+<li>Complete a few beginner labs in a legal web security training environment.</li>
+<li>Practice writing one vulnerability report with steps to reproduce, impact, and remediation.</li>
+<li>Learn the difference between authentication and authorization.</li>
+<li>Review the OWASP Top 10 and connect each category to one concrete example.</li>
+<li>Read a simple web app’s code and trace where user input enters and where it is trusted.</li>
+</ol>
+<h2>Public resources</h2>
+<ul>
+<li><a href="https://portswigger.net/web-security">PortSwigger Web Security Academy</a> for free web application labs.</li>
+<li><a href="https://owasp.org/www-project-web-security-testing-guide/">OWASP Web Security Testing Guide</a> for testing methodology.</li>
+<li><a href="https://owasp.org/www-project-top-ten/">OWASP Top 10</a> for common application risk categories.</li>
+<li><a href="https://cheatsheetseries.owasp.org/">OWASP Cheat Sheet Series</a> for developer-facing remediation guidance.</li>
+</ul>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>Built as an open starting point for security interns. CTFs are practice environments, not complete models of enterprise security work.</p>
+      </div>
+    </footer>
+  </body>
+</html>

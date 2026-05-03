@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Threat Intelligence | Security Intern Field Guide</title>
+    <meta name="description" content="A beginner-friendly map of cybersecurity career branches, enterprise context, and CTF skills that transfer into real work.">
+    <link rel="stylesheet" href="../assets/css/style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap header-grid">
+        <a class="brand" href="../index.html">Security Intern Field Guide</a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="../index.html">Home</a>
+          <a href="soc-detection.html">Branches</a>
+          <a href="../ctf-skills-map.html">CTF Map</a>
+          <a href="../glossary.html">Glossary</a>
+        </nav>
+      </div>
+    </header>
+    <main id="content" class="wrap page-shell">
+<h1>Threat Intelligence</h1>
+<h2>What this branch does</h2>
+<p>Threat intelligence helps organizations understand the threats that matter to them. The work turns raw information into context: who might target us, what do they want, how do they operate, what evidence supports that, and what should we do differently?</p>
+<p>Threat intelligence can be strategic, operational, or tactical. Strategic intelligence supports leadership decisions. Operational intelligence supports campaign tracking and defensive planning. Tactical intelligence supports day-to-day detection, blocking, and investigation.</p>
+<h2>Common work</h2>
+<ul>
+<li>Track threat actors, campaigns, vulnerabilities, malware families, and tactics.</li>
+<li>Read public and private reporting, then summarize what is relevant.</li>
+<li>Enrich indicators with context and confidence levels.</li>
+<li>Help detection teams map behavior to MITRE ATT&amp;CK.</li>
+<li>Produce briefings for technical teams, managers, or executives.</li>
+<li>Distinguish evidence from speculation.</li>
+</ul>
+<h2>Concepts to know</h2>
+<p>Important vocabulary includes indicator of compromise, tactic, technique, procedure, campaign, actor, malware family, attribution, confidence, collection requirement, source reliability, vulnerability exploitation, kill chain, and intelligence requirement. Security+ concepts around threat actors, attacks, vulnerabilities, malware, social engineering, and risk show up frequently.</p>
+<p>Threat intelligence is as much about judgment as data. A list of IP addresses is not automatically intelligence. The value comes from context, relevance, confidence, and a recommended decision.</p>
+<h2>CTF skills that help</h2>
+<p>Reverse engineering can help learners understand malware behavior and file analysis. Intercepting communication helps with command-and-control patterns, phishing infrastructure, and network indicators. Web security and access control help analysts understand how vulnerabilities are exploited in campaigns. Cryptography and encoding challenges help when reading suspicious artifacts, scripts, payloads, or obfuscated data.</p>
+<p>CTF writeups can also teach a useful habit: explain the path from clue to conclusion.</p>
+<h2>Where CTFs differ from industry</h2>
+<p>CTFs usually reward certainty: solve the challenge, get the flag. Threat intelligence often works with incomplete, conflicting, or low-confidence information. Industry intelligence also has an audience. A SOC analyst, executive, vulnerability manager, or public-sector partner may each need a different version of the same story.</p>
+<h2>Beginner next steps</h2>
+<ol>
+<li>Read one public threat report and separate facts, interpretations, and recommendations.</li>
+<li>Pick a MITRE ATT&amp;CK technique and find examples of how defenders might observe it.</li>
+<li>Practice summarizing a technical issue for both an analyst and a manager.</li>
+<li>Learn basic file hashes, domains, IP addresses, URLs, and why indicators can expire.</li>
+<li>Compare a CTF reverse-engineering clue to the kind of behavior a defender would track.</li>
+</ol>
+<h2>Public resources</h2>
+<ul>
+<li><a href="https://attack.mitre.org/">MITRE ATT&amp;CK</a> for behavior-based threat language.</li>
+<li><a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog">CISA Known Exploited Vulnerabilities Catalog</a> for exploited vulnerability context.</li>
+<li><a href="https://www.misp-project.org/">MISP Project</a> for threat intelligence sharing concepts.</li>
+<li><a href="https://www.nist.gov/itl/applied-cybersecurity/nice/nice-cybersecurity-workforce-framework">NIST NICE Framework</a> for workforce role context.</li>
+</ul>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>Built as an open starting point for security interns. CTFs are practice environments, not complete models of enterprise security work.</p>
+      </div>
+    </footer>
+  </body>
+</html>

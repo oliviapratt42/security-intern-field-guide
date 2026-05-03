@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CTF Skills Map | Security Intern Field Guide</title>
+    <meta name="description" content="A beginner-friendly map of cybersecurity career branches, enterprise context, and CTF skills that transfer into real work.">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap header-grid">
+        <a class="brand" href="index.html">Security Intern Field Guide</a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a href="branches/soc-detection.html">Branches</a>
+          <a href="ctf-skills-map.html">CTF Map</a>
+          <a href="glossary.html">Glossary</a>
+        </nav>
+      </div>
+    </header>
+    <main id="content" class="wrap page-shell">
+<h1>CTF Skills Map</h1>
+<p>CTFs are useful because they give you controlled practice with security ideas that are otherwise hard to touch safely. The trick is to translate the challenge skill into an enterprise question. A flag proves you solved one exercise. A security career asks what that exercise teaches you about systems, risk, people, and decisions.</p>
+<h2>Quick map</h2>
+<table><thead><tr><th>CTF skill area</th><th>Helps you explore</th><th>Enterprise translation</th></tr></thead><tbody><tr><td>Web security</td><td>AppSec, Red Team, Security Engineering</td><td>How applications receive input, manage sessions, enforce authorization, and expose business logic.</td></tr><tr><td>Intercepting communication</td><td>SOC / Detection, Security Engineering, Cloud / Infrastructure</td><td>How systems talk, what normal traffic looks like, and where evidence appears in requests, logs, DNS, TLS, and network flows.</td></tr><tr><td>Cryptography</td><td>Security Engineering, GRC / Risk, Cloud / Infrastructure</td><td>How organizations protect data, manage keys, validate identity, and avoid confusing encoding, hashing, and encryption.</td></tr><tr><td>Access control</td><td>AppSec, Cloud / Infrastructure, GRC / Risk</td><td>Who can do what, where permissions are enforced, and how least privilege fails.</td></tr><tr><td>Reverse engineering</td><td>Threat Intelligence, Red Team, SOC / Detection</td><td>How software behaves when source code is unavailable, including malware triage and suspicious file analysis.</td></tr><tr><td>Binary exploitation</td><td>Red Team, Detection, Security Research</td><td>How memory corruption and low-level bugs work, with a caveat that many interns will use this less often than web, identity, cloud, and scripting skills.</td></tr><tr><td>Integrated security</td><td>All branches</td><td>How multiple small weaknesses combine into risk across identity, applications, infrastructure, and operations.</td></tr></tbody></table>
+<h2>Web security</h2>
+<p>Web challenges are one of the easiest ways to see security in motion. They teach you to inspect requests, manipulate parameters, notice trust boundaries, and understand how authentication and authorization can break. This transfers strongly to Application Security, Red Team work, and Security Engineering.</p>
+<p>Enterprise question: if this bug existed in a real product, who would own the fix, what data or action would be exposed, and how would the organization prevent the pattern from returning?</p>
+<h2>Intercepting communication</h2>
+<p>Traffic inspection helps you understand protocols, headers, sessions, DNS, TLS, and the difference between client-side and server-side behavior. This supports SOC investigations, infrastructure troubleshooting, cloud security, and offensive testing.</p>
+<p>Enterprise question: what telemetry would show this activity, and how would a defender tell normal traffic from suspicious traffic?</p>
+<h2>Cryptography</h2>
+<p>Crypto CTFs can be playful and math-heavy, but the industry value for beginners is often vocabulary discipline. Encoding is not encryption. Hashing is not reversible encryption. Randomness, key handling, certificate validation, and token design matter because organizations depend on them for trust.</p>
+<p>Enterprise question: what secret, key, token, certificate, or data flow is being protected, and what would happen if that protection failed?</p>
+<h2>Access control</h2>
+<p>Access control is one of the most transferable areas. It appears in web apps, cloud permissions, enterprise identity, file systems, APIs, administrative tools, and audit evidence. Many real incidents involve someone or something having more access than intended.</p>
+<p>Enterprise question: who should be allowed to perform this action, where is that rule enforced, and how would we notice if it failed?</p>
+<h2>Reverse engineering</h2>
+<p>Reverse engineering teaches patience with unknown software. It can support malware analysis, vulnerability research, threat intelligence, and detection engineering. For beginners, the most useful habit is tracing behavior and explaining what the program appears to do.</p>
+<p>Enterprise question: what behavior matters to defenders, and what evidence would let another analyst verify the conclusion?</p>
+<h2>Binary exploitation</h2>
+<p>Binary exploitation builds deep technical understanding of memory, programs, and operating systems. It is valuable in vulnerability research, exploit development, some red team roles, and advanced detection work. It is also easy for beginner programs to overemphasize compared with the amount of day-to-day enterprise work that depends on it.</p>
+<p>Enterprise question: is this low-level flaw relevant to the organization’s actual software, exposed systems, patching process, or threat model?</p>
+<h2>Integrated security</h2>
+<p>Real security work rarely stays inside one category. A realistic incident might combine a weak password, exposed service, missing patch, poor logging, overbroad permission, and unclear ownership. Integrated challenges are valuable when they teach you to connect pieces without losing the thread.</p>
+<p>Enterprise question: which teams, controls, and decisions would be involved if this happened outside the lab?</p>
+<h2>How to reflect after a challenge</h2>
+<p>Use this short reflection after each CTF or lab:</p>
+<ol>
+<li>What skill did I practice?</li>
+<li>What security concept did it demonstrate?</li>
+<li>Which career branch would care about this?</li>
+<li>What would be different in a real organization?</li>
+<li>What evidence, control, or decision would matter next?</li>
+</ol>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>Built as an open starting point for security interns. CTFs are practice environments, not complete models of enterprise security work.</p>
+      </div>
+    </footer>
+  </body>
+</html>

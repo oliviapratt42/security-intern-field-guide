@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SOC / Detection | Security Intern Field Guide</title>
+    <meta name="description" content="A beginner-friendly map of cybersecurity career branches, enterprise context, and CTF skills that transfer into real work.">
+    <link rel="stylesheet" href="../assets/css/style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap header-grid">
+        <a class="brand" href="../index.html">Security Intern Field Guide</a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="../index.html">Home</a>
+          <a href="soc-detection.html">Branches</a>
+          <a href="../ctf-skills-map.html">CTF Map</a>
+          <a href="../glossary.html">Glossary</a>
+        </nav>
+      </div>
+    </header>
+    <main id="content" class="wrap page-shell">
+<h1>SOC / Detection</h1>
+<h2>What this branch does</h2>
+<p>Security Operations Center work focuses on finding, triaging, and responding to suspicious activity. A SOC analyst tries to answer practical questions quickly: what happened, which systems or users are affected, how severe is it, and what should happen next?</p>
+<p>Detection work is the craft of turning security knowledge into signals. That can mean writing alert logic, improving log collection, tuning noisy rules, building dashboards, or mapping attacker behavior to observable events. At an enterprise level, SOC and detection teams are part of the organization’s nervous system. They help the business notice when something is wrong.</p>
+<h2>Common work</h2>
+<ul>
+<li>Review alerts from endpoint, identity, network, cloud, and application tools.</li>
+<li>Investigate logs, process activity, authentication patterns, and network connections.</li>
+<li>Escalate incidents with clear evidence and severity.</li>
+<li>Tune detection rules so alerts are useful instead of overwhelming.</li>
+<li>Document repeatable investigation steps in playbooks.</li>
+<li>Coordinate with IT, engineering, legal, and leadership during incidents.</li>
+</ul>
+<h2>Concepts to know</h2>
+<p>Useful vocabulary includes logs, telemetry, indicators of compromise, tactics and techniques, incident severity, false positives, false negatives, SIEM, EDR, correlation, enrichment, containment, and escalation. Security+ language around monitoring, incident response, authentication, network traffic, malware, and vulnerability impact shows up often here.</p>
+<p>SOC work is not just staring at alerts. The deeper skill is reasoning from evidence. A good analyst can explain why an event is suspicious, what normal behavior would look like, and what evidence would change the conclusion.</p>
+<h2>CTF skills that help</h2>
+<p>Intercepting communication helps because many investigations depend on understanding requests, responses, headers, sessions, DNS, and network flows. Reverse engineering can help with malware triage and suspicious file analysis. Web security helps analysts recognize attacks against applications. Integrated security challenges help because real incidents rarely stay inside one topic.</p>
+<p>Beginner CTF practice is useful when it teaches you to slow down, preserve clues, and explain what each artifact means. Packet captures, log puzzles, encoded strings, and simple malware-analysis exercises can all support detection thinking.</p>
+<h2>Where CTFs differ from industry</h2>
+<p>CTFs usually contain a clean path to a flag. SOC work often contains incomplete logs, ambiguous symptoms, tool limitations, and pressure to decide before every fact is known. The goal in industry is not to solve a puzzle elegantly. It is to reduce risk, protect systems, communicate clearly, and avoid making the situation worse.</p>
+<h2>Beginner next steps</h2>
+<ol>
+<li>Learn basic Linux command-line searching with <code>grep</code>, <code>find</code>, <code>journalctl</code>, and shell history.</li>
+<li>Open a small packet capture in Wireshark and identify DNS, HTTP, and TLS traffic.</li>
+<li>Read a few MITRE ATT&amp;CK techniques and ask what evidence would reveal them.</li>
+<li>Practice writing a short incident note: summary, evidence, impact, recommended action.</li>
+<li>Compare a CTF forensic clue to an enterprise log source that might contain similar evidence.</li>
+</ol>
+<h2>Public resources</h2>
+<ul>
+<li><a href="https://attack.mitre.org/">MITRE ATT&amp;CK</a> for adversary behavior and detection language.</li>
+<li><a href="https://github.com/SigmaHQ/sigma">Sigma rules</a> for open detection-rule examples.</li>
+<li><a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog">CISA Known Exploited Vulnerabilities Catalog</a> for vulnerability prioritization context.</li>
+<li><a href="https://www.wireshark.org/docs/wsug_html_chunked/">Wireshark User's Guide</a> for packet analysis basics.</li>
+</ul>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>Built as an open starting point for security interns. CTFs are practice environments, not complete models of enterprise security work.</p>
+      </div>
+    </footer>
+  </body>
+</html>
