@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Glossary | Security Intern Field Guide</title>
-    <meta name="description" content="A beginner-friendly map of cybersecurity career branches, enterprise context, and CTF skills that transfer into real work.">
+    <meta name="description" content="Beginner-friendly cybersecurity definitions for interns, CTF learners, and early-career security students.">
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
@@ -16,81 +16,65 @@
           <a href="index.html">Home</a>
           <a href="branches/soc-detection.html">Branches</a>
           <a href="ctf-skills-map.html">CTF Map</a>
-          <a href="glossary.html">Glossary</a>
+          <a href="glossary.html" aria-current="page">Glossary</a>
         </nav>
       </div>
     </header>
     <main id="content" class="wrap page-shell">
-<h1>Glossary</h1>
-<p>This glossary gives beginner-friendly working definitions. It is not a certification cram sheet. Use it to recognize vocabulary when reading branch pages, job descriptions, public reports, and security resources.</p>
-<h2>Access control</h2>
-<p>Rules and mechanisms that decide who or what can access a resource and what actions they can perform.</p>
-<h2>Asset</h2>
-<p>Something an organization values and needs to protect, such as a server, laptop, application, identity, database, cloud account, or dataset.</p>
-<h2>Attack surface</h2>
-<p>The set of places where an attacker could interact with a system, such as exposed services, login pages, APIs, dependencies, users, or cloud resources.</p>
-<h2>Authentication</h2>
-<p>The process of proving identity. Passwords, multifactor prompts, certificates, and tokens can all be part of authentication.</p>
-<h2>Authorization</h2>
-<p>The process of deciding what an authenticated identity is allowed to do. A user may be logged in but still not allowed to access a specific record or admin function.</p>
-<h2>Availability</h2>
-<p>The security objective that systems and data should be accessible when needed.</p>
-<h2>CIA triad</h2>
-<p>Confidentiality, integrity, and availability. A simple model for thinking about what security is trying to protect.</p>
-<h2>Control</h2>
-<p>A safeguard or process intended to reduce risk. Controls can be technical, administrative, or physical.</p>
-<h2>Detection</h2>
-<p>The practice of noticing suspicious or harmful activity by using logs, alerts, behavioral patterns, and investigation.</p>
-<h2>Encryption</h2>
-<p>A reversible way to protect data so that only someone with the right key can read it.</p>
-<h2>Encoding</h2>
-<p>A way to represent data in a different format. Encoding is not meant to provide secrecy.</p>
-<h2>Endpoint</h2>
-<p>A user or server system such as a laptop, desktop, virtual machine, or workload where activity can be monitored or protected.</p>
-<h2>Evidence</h2>
-<p>Information that supports a security conclusion. In security work, evidence may include logs, screenshots, packet captures, alerts, tickets, configuration exports, or command output.</p>
-<h2>False negative</h2>
-<p>A missed detection. Something bad happened, but the control or alert did not catch it.</p>
-<h2>False positive</h2>
-<p>An alert or finding that appears suspicious but is not actually harmful or relevant.</p>
-<h2>Governance</h2>
-<p>The way an organization defines security responsibilities, decision rights, policies, and oversight.</p>
-<h2>Hashing</h2>
-<p>A one-way process that turns data into a fixed-length value. Hashing is commonly used for integrity checks and password storage, but it is not encryption.</p>
-<h2>Identity and access management</h2>
-<p>The systems and processes used to manage users, service accounts, roles, permissions, authentication, and authorization.</p>
-<h2>Incident</h2>
-<p>A security event that may harm confidentiality, integrity, availability, policy, compliance, or business operations.</p>
-<h2>Indicator of compromise</h2>
-<p>An artifact that may suggest malicious activity, such as a file hash, IP address, domain, URL, registry key, or suspicious process name.</p>
-<h2>Least privilege</h2>
-<p>The design principle that users, services, and systems should have only the access they need to do their job.</p>
-<h2>Log</h2>
-<p>A record of events from a system, application, network device, cloud service, identity provider, or security tool.</p>
-<h2>Malware</h2>
-<p>Software designed to harm, spy on, disrupt, steal, extort, or give unauthorized control.</p>
-<h2>Multifactor authentication</h2>
-<p>Authentication that uses more than one kind of proof, such as something you know, something you have, or something you are.</p>
-<h2>Patch management</h2>
-<p>The process of identifying, testing, prioritizing, and applying software updates that fix bugs or vulnerabilities.</p>
-<h2>Risk</h2>
-<p>The possibility that a threat could exploit a weakness and cause impact. Risk is usually discussed in terms of likelihood, impact, and context.</p>
-<h2>Security information and event management</h2>
-<p>A SIEM collects and analyzes security-relevant logs so teams can investigate and alert on activity across systems.</p>
-<h2>Telemetry</h2>
-<p>Observable data from systems and tools, such as logs, events, metrics, traces, alerts, and network records.</p>
-<h2>Threat actor</h2>
-<p>An individual or group that could cause harm to systems or data. Threat actors may be criminals, insiders, nation-state groups, hacktivists, or opportunistic attackers.</p>
-<h2>Threat intelligence</h2>
-<p>Contextual information about threats that helps an organization make decisions.</p>
-<h2>Vulnerability</h2>
-<p>A weakness that could be exploited to harm confidentiality, integrity, availability, or trust.</p>
-<h2>Vulnerability management</h2>
-<p>The process of discovering, prioritizing, fixing, tracking, and reporting vulnerabilities across an organization.</p>
+      <section class="hero">
+        <p class="eyebrow">Working vocabulary</p>
+        <h1>Glossary</h1>
+        <p class="lede">Because half of cybersecurity is knowing what the acronym means.</p>
+      </section>
+
+      <div class="definition-list">
+        <article><div class="tag-row"><span class="tag">Concept</span></div><h2>Access control</h2><p>Rules and mechanisms that decide who or what can use a resource and what actions they can perform.</p></article>
+        <article><div class="tag-row"><span class="tag">Threat</span></div><h2>Advanced persistent threat (APT)</h2><p>A well-resourced threat actor or campaign that maintains long-term access or targeting. The term is often used for nation-state or highly organized activity.</p></article>
+        <article><div class="tag-row"><span class="tag">Concept</span></div><h2>Asset</h2><p>Something an organization values and needs to protect, such as a system, application, identity, database, or dataset.</p></article>
+        <article><div class="tag-row"><span class="tag">Concept</span></div><h2>Attack surface</h2><p>The set of places where an attacker could interact with an organization, including services, APIs, users, vendors, dependencies, identities, and cloud resources.</p></article>
+        <article><div class="tag-row"><span class="tag">Concept</span></div><h2>Authentication</h2><p>The process of proving identity with something like a password, multifactor prompt, certificate, or token.</p></article>
+        <article><div class="tag-row"><span class="tag">Concept</span></div><h2>Authorization</h2><p>The process of deciding what an authenticated identity is allowed to do.</p></article>
+        <article><div class="tag-row"><span class="tag">Concept</span></div><h2>CIA triad</h2><p>Confidentiality, integrity, and availability: a simple model for what security tries to protect.</p></article>
+        <article><div class="tag-row"><span class="tag">Control</span></div><h2>Control</h2><p>A safeguard or process intended to reduce risk. Controls can be technical, administrative, or physical.</p></article>
+        <article><div class="tag-row"><span class="tag">Operations</span></div><h2>Endpoint</h2><p>A user or server system, such as a laptop, desktop, virtual machine, or workload.</p></article>
+        <article><div class="tag-row"><span class="tag">Operations</span></div><h2>False negative</h2><p>A missed alert or finding: harmful activity happened, but the control did not catch it.</p></article>
+        <article><div class="tag-row"><span class="tag">Operations</span></div><h2>False positive</h2><p>An alert or finding that appears suspicious but is not actually harmful or relevant.</p></article>
+        <article><div class="tag-row"><span class="tag">GRC</span></div><h2>Governance</h2><p>The way an organization defines security responsibilities, decision rights, policies, and oversight.</p></article>
+        <article><div class="tag-row"><span class="tag">Concept</span><span class="tag">IAM</span></div><h2>Identity and access management (IAM)</h2><p>The systems and processes used to manage users, service accounts, roles, permissions, authentication, and authorization.</p></article>
+        <article><div class="tag-row"><span class="tag">Operations</span></div><h2>Incident</h2><p>A security event that may harm confidentiality, integrity, availability, policy, compliance, or business operations.</p></article>
+        <article><div class="tag-row"><span class="tag">Operations</span><span class="tag">Process</span></div><h2>Incident response (IR)</h2><p>The organized process for handling a security incident, including triage, containment, investigation, communication, recovery, and lessons learned.</p></article>
+        <article><div class="tag-row"><span class="tag">Threat</span></div><h2>Indicator of compromise (IOC)</h2><p>An artifact that may suggest malicious activity, such as a file hash, IP address, domain, URL, or suspicious process name.</p></article>
+        <article><div class="tag-row"><span class="tag">Concept</span></div><h2>Least privilege</h2><p>The design principle that users, services, and systems should have only the access they need.</p></article>
+        <article><div class="tag-row"><span class="tag">Control</span><span class="tag">IAM</span></div><h2>Multifactor authentication (MFA)</h2><p>Authentication that uses more than one kind of proof, such as something you know, have, or are.</p></article>
+        <article><div class="tag-row"><span class="tag">Assessment</span></div><h2>Penetration test (pentest)</h2><p>An authorized security assessment that attempts to validate exploitable weaknesses in a defined scope. A good pentest produces evidence, impact, and practical remediation guidance.</p></article>
+        <article><div class="tag-row"><span class="tag">Assessment</span><span class="tag">Process</span></div><h2>Rules of engagement (RoE)</h2><p>The written boundaries for a test or exercise: what is in scope, what is off limits, when testing may happen, who to contact, how far testers may go, and how to handle sensitive findings.</p></article>
+        <article><div class="tag-row"><span class="tag">Control</span></div><h2>Patch management</h2><p>The process of identifying, testing, prioritizing, and applying updates that fix bugs or vulnerabilities.</p></article>
+        <article><div class="tag-row"><span class="tag">GRC</span></div><h2>Risk</h2><p>The possibility that a threat could exploit a weakness and cause impact, usually discussed through likelihood, impact, and context.</p></article>
+        <article><div class="tag-row"><span class="tag">Team</span></div><h2>Red team</h2><p>A security team or exercise role that uses authorized attacker-informed methods to test assumptions, validate risk, and improve defenses.</p></article>
+        <article><div class="tag-row"><span class="tag">Team</span></div><h2>Blue team</h2><p>A defensive security team or exercise role focused on monitoring, detection, response, hardening, and protecting systems.</p></article>
+        <article><div class="tag-row"><span class="tag">Team</span></div><h2>Purple team</h2><p>A collaborative approach where offensive and defensive teams work together to improve detection, response, and control effectiveness.</p></article>
+        <article><div class="tag-row"><span class="tag">Ethics</span></div><h2>White hat hacker</h2><p>A hacker who works with authorization and ethical intent, usually to find and report weaknesses so they can be fixed.</p></article>
+        <article><div class="tag-row"><span class="tag">Ethics</span></div><h2>Black hat hacker</h2><p>A hacker who acts without authorization and with harmful, criminal, or exploitative intent.</p></article>
+        <article><div class="tag-row"><span class="tag">Ethics</span></div><h2>Grey hat hacker</h2><p>A hacker whose actions fall between clear authorization and clear malicious intent, often creating legal, ethical, or safety concerns.</p></article>
+        <article><div class="tag-row"><span class="tag">Role</span></div><h2>Chief information security officer (CISO)</h2><p>The senior leader responsible for an organization's security strategy, risk posture, program priorities, and executive-level security communication.</p></article>
+        <article><div class="tag-row"><span class="tag">Role</span></div><h2>Security analyst</h2><p>A role focused on reviewing security information, investigating activity, documenting findings, and helping teams decide what needs attention.</p></article>
+        <article><div class="tag-row"><span class="tag">Role</span></div><h2>Security architect</h2><p>A senior security role focused on designing secure systems and programs. Architects help choose patterns, controls, tradeoffs, and standards before systems are built or changed.</p></article>
+        <article><div class="tag-row"><span class="tag">Role</span></div><h2>Security engineer</h2><p>A role focused on building, configuring, automating, and maintaining security systems and controls so they work reliably at organizational scale.</p></article>
+        <article><div class="tag-row"><span class="tag">Team</span><span class="tag">Operations</span></div><h2>Security operations center (SOC)</h2><p>A team or function that monitors security activity, investigates alerts, escalates incidents, and coordinates response work.</p></article>
+        <article><div class="tag-row"><span class="tag">Team</span></div><h2>Security operations (SecOps)</h2><p>The day-to-day work of monitoring, investigating, triaging, escalating, and responding to security activity across an organization.</p></article>
+        <article><div class="tag-row"><span class="tag">Operations</span></div><h2>Security information and event management (SIEM)</h2><p>A system that collects and analyzes security-relevant events so teams can investigate activity, create alerts, and report on patterns.</p></article>
+        <article><div class="tag-row"><span class="tag">Concept</span><span class="tag">AppSec</span></div><h2>Shifting left</h2><p>Moving security work earlier in the development process so teams can catch design, code, dependency, and configuration issues before release.</p></article>
+        <article><div class="tag-row"><span class="tag">Team</span><span class="tag">AppSec</span></div><h2>DevSecOps</h2><p>An approach that integrates security into development and operations workflows through automation, shared responsibility, and secure delivery practices.</p></article>
+        <article><div class="tag-row"><span class="tag">Operations</span></div><h2>Telemetry</h2><p>Observable data from systems and tools, such as events, metrics, traces, alerts, and network records.</p></article>
+        <article><div class="tag-row"><span class="tag">Threat</span></div><h2>Threat actor</h2><p>An individual or group that could cause harm to systems or data.</p></article>
+        <article><div class="tag-row"><span class="tag">Threat</span></div><h2>Threat intelligence (TI)</h2><p>Contextual information about threats that helps an organization make decisions.</p></article>
+        <article><div class="tag-row"><span class="tag">Concept</span></div><h2>Vulnerability</h2><p>A weakness that could be exploited to harm confidentiality, integrity, availability, or trust.</p></article>
+        <article><div class="tag-row"><span class="tag">Program</span></div><h2>Vulnerability management (VM)</h2><p>The process of discovering, prioritizing, fixing, tracking, and reporting vulnerabilities across an organization.</p></article>
+      </div>
     </main>
     <footer class="site-footer">
       <div class="wrap">
-        <p>Built as an open starting point for security interns. CTFs are practice environments, not complete models of enterprise security work.</p>
+        <p>Security Intern's Field Guide: seeing how CTF skills show up across security teams, systems, and decisions.</p>
       </div>
     </footer>
   </body>

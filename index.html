@@ -13,7 +13,7 @@
       <div class="wrap header-grid">
         <a class="brand" href="index.html">Security Intern Field Guide</a>
         <nav class="site-nav" aria-label="Primary navigation">
-          <a href="index.html">Home</a>
+          <a href="index.html" aria-current="page">Home</a>
           <a href="branches/soc-detection.html">Branches</a>
           <a href="ctf-skills-map.html">CTF Map</a>
           <a href="glossary.html">Glossary</a>
@@ -21,55 +21,98 @@
       </div>
     </header>
     <main id="content" class="wrap page-shell">
-<section class="hero">
-  <p class="eyebrow">A beginner map for security interns</p>
-  <h1>See where CTF practice fits into real security work.</h1>
-  <p class="lede">This field guide connects hands-on cyber practice to the enterprise security landscape: the teams, roles, vocabulary, and beginner next steps that show up in public and private sector work.</p>
-</section>
-<div class="callout">
-  <strong>How to use this guide:</strong> start with the branch that sounds most interesting, scan the CTF skills that transfer into it, then use the next steps and public resources to choose one small thing to practice this week.
-</div>
-<h2>What this guide is</h2>
-<p>This is a starting guide for learners who are early in cybersecurity and trying to understand what the field looks like beyond isolated technical challenges. It is especially written for interns, students, and CTF newcomers who want practical context before they decide what to study deeply.</p>
-<p>The guide does not try to replace a course, certification book, lab platform, or job description. Instead, it gives you a working map: what different security branches care about, what people commonly do in those branches, and which CTF skills can help you build useful instincts.</p>
-<h2>Career branches</h2>
-<div class="branch-nav">
-  <a href="branches/soc-detection.html">SOC / Detection</a>
-  <a href="branches/security-engineering.html">Security Engineering</a>
-  <a href="branches/application-security.html">Application Security</a>
-  <a href="branches/red-team-offensive-security.html">Red Team / Offensive Security</a>
-  <a href="branches/threat-intelligence.html">Threat Intelligence</a>
-  <a href="branches/grc-risk.html">GRC / Risk</a>
-  <a href="branches/cloud-infrastructure-security.html">Cloud / Infrastructure Security</a>
-  <a href="ctf-skills-map.html">CTF Skills Map</a>
-  <a href="glossary.html">Glossary</a>
-</div>
-<h2>Why CTFs still matter</h2>
-<p>CTFs are controlled practice environments. They are good for building curiosity, pattern recognition, tool familiarity, and comfort with ambiguity. They can help you learn how web requests work, what access control mistakes look like, how encoded data behaves, how binaries fail, and how small technical clues can point to a larger security story.</p>
-<p>CTFs are not the same as enterprise security work. Real organizations have business constraints, production systems, legal boundaries, documentation needs, team handoffs, compliance requirements, user impact, and imperfect telemetry. The goal is not to treat CTFs as job simulations. The goal is to use them as practice that makes the real work easier to understand.</p>
-<h2>A simple learning loop</h2>
-<ol>
-<li>Pick one career branch.</li>
-<li>Read the plain-language overview and common work.</li>
-<li>Choose one CTF skill that supports that branch.</li>
-<li>Do a small lab or challenge in a legal practice environment.</li>
-<li>Write down the enterprise question behind the challenge: what would an organization need to prevent, detect, explain, or govern this?</li>
-</ol>
-<h2>Good first public resources</h2>
-<ul>
-<li><a href="https://www.nist.gov/itl/applied-cybersecurity/nice/nice-cybersecurity-workforce-framework">NIST NICE Cybersecurity Workforce Framework</a> for role language and workforce context.</li>
-<li><a href="https://www.nist.gov/cyberframework">NIST Cybersecurity Framework</a> for risk and program-level security vocabulary.</li>
-<li><a href="https://attack.mitre.org/">MITRE ATT&amp;CK</a> for adversary behavior, tactics, and detection thinking.</li>
-<li><a href="https://owasp.org/www-project-web-security-testing-guide/">OWASP Web Security Testing Guide</a> for web application testing structure.</li>
-<li><a href="https://portswigger.net/web-security">PortSwigger Web Security Academy</a> for free web security labs.</li>
-<li><a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog">CISA Known Exploited Vulnerabilities Catalog</a> for real-world vulnerability prioritization context.</li>
-</ul>
-<h2>How this site should grow</h2>
-<p>Future versions can add role interviews, beginner projects, course-specific links, reading paths, and short “from challenge to enterprise” examples. Version one stays intentionally small: enough to help a learner orient, choose a path, and understand why the work matters.</p>
+      <section class="hero">
+        <p class="eyebrow">A beginner map for security interns</p>
+        <h1>See where CTF practice maps to enterprise security.</h1>
+        <p class="lede">This field guide connects hands-on cyber practice to the enterprise security landscape: the teams, roles, vocabulary, and beginner next steps that show up in public and private sector work.</p>
+      </section>
+
+      <div class="callout">
+        <strong>How to use this guide:</strong> start with the branch that sounds most interesting, scan the CTF skills that transfer into it, then use the standards, glossary, and enterprise mappings to see where your technical interests fit.
+      </div>
+
+      <section class="intro-panel" aria-labelledby="start-here">
+        <h2 id="start-here">Start here</h2>
+        <p>So you have solved some CTFs, written code, chased clues, and practiced thinking like a security problem-solver. Cybersecurity also has a place inside businesses, agencies, schools, hospitals, and public infrastructure. This guide is a place to learn where those skills show up, what different security teams care about, and where your interests might match the work.</p>
+        <div class="path-steps">
+          <article>
+            <h3>Start from CTF practice</h3>
+            <p>Use the challenge categories you know as anchors instead of starting from job titles alone.</p>
+          </article>
+          <article>
+            <h3>Map the enterprise context</h3>
+            <p>Connect the skill to teams, controls, evidence, ownership, and business impact.</p>
+          </article>
+          <article>
+            <h3>Explore the branch</h3>
+            <p>Read the branch page to see how that same skill appears in day-to-day security work.</p>
+          </article>
+        </div>
+        <p><a class="next-link" href="ctf-skills-map.html#translator">Open the enterprise CTF map</a></p>
+      </section>
+
+      <h2>Career branches</h2>
+      <p class="branch-summary">Cybersecurity is not one job. These branches overlap, but each one has a different center of gravity: evidence, engineering, software, testing, intelligence, risk, or infrastructure.</p>
+      <div class="grid">
+        <a class="card card-link" href="branches/soc-detection.html">
+          <h3>SOC / Detection</h3>
+          <p>Investigate alerts, reason from evidence, and help the organization notice when something is wrong.</p>
+          <div class="meta"><span class="pill">Logs</span><span class="pill">Incidents</span><span class="pill">Signals</span></div>
+        </a>
+        <a class="card card-link" href="branches/security-engineering.html">
+          <h3>Security Engineering</h3>
+          <p>Build and improve the systems that make secure behavior easier, repeatable, and measurable.</p>
+          <div class="meta"><span class="pill">Controls</span><span class="pill">Automation</span><span class="pill">Platforms</span></div>
+        </a>
+        <a class="card card-link" href="branches/application-security.html">
+          <h3>Application Security</h3>
+          <p>Help software teams prevent, find, explain, and fix risks in applications and APIs.</p>
+          <div class="meta"><span class="pill">Web</span><span class="pill">Code</span><span class="pill">Design</span></div>
+        </a>
+        <a class="card card-link" href="branches/red-team-offensive-security.html">
+          <h3>Red Team / Offensive Security</h3>
+          <p>Use authorized attacker-informed testing to validate risk and improve defenses.</p>
+          <div class="meta"><span class="pill">Testing</span><span class="pill">Scope</span><span class="pill">Evidence</span></div>
+        </a>
+        <a class="card card-link" href="branches/threat-intelligence.html">
+          <h3>Threat Intelligence</h3>
+          <p>Turn threat information into context, confidence, and decisions for the right audience.</p>
+          <div class="meta"><span class="pill">Actors</span><span class="pill">Context</span><span class="pill">Briefing</span></div>
+        </a>
+        <a class="card card-link" href="branches/grc-risk.html">
+          <h3>GRC / Risk</h3>
+          <p>Connect security work to controls, accountability, evidence, compliance, and business risk.</p>
+          <div class="meta"><span class="pill">Risk</span><span class="pill">Controls</span><span class="pill">Evidence</span></div>
+        </a>
+        <a class="card card-link" href="branches/cloud-infrastructure-security.html">
+          <h3>Cloud / Infrastructure Security</h3>
+          <p>Protect the platforms, identities, networks, and services that teams build on.</p>
+          <div class="meta"><span class="pill">IAM</span><span class="pill">Network</span><span class="pill">Cloud</span></div>
+        </a>
+      </div>
+
+      <h2>Where CTF knowledge matters</h2>
+      <p>CTFs build the technical instincts that security teams rely on: reading code and requests closely, testing assumptions, following clues, recognizing weak access control, understanding data formats, and staying persistent when a system is unfamiliar.</p>
+      <p>Those instincts support enterprise work because organizations need people who can connect technical behavior to operational questions. A web challenge can become a discussion about application ownership and authorization. A traffic challenge can become a discussion about telemetry and detection. A crypto challenge can become a discussion about key handling, token design, and data protection requirements.</p>
+      <p>CTF skills also support research. They train you to isolate a problem, build a hypothesis, test evidence, document a path, and explain what you found. Those habits show up in vulnerability research, threat analysis, incident review, secure design, and standards-based security work.</p>
+
+      <div class="callout">
+        <strong>How to use this guide:</strong> start with a branch or CTF skill that sounds familiar, scan the enterprise mapping, then use the branch pages and glossary to understand the larger security landscape around the technical work.
+      </div>
+
+      <h2>Standards and reference frameworks</h2>
+      <ul class="resource-list">
+        <li><a href="https://www.nist.gov/itl/applied-cybersecurity/nice/nice-cybersecurity-workforce-framework">NIST NICE Cybersecurity Workforce Framework</a> for role language and workforce context.</li>
+        <li><a href="https://www.nist.gov/cyberframework">NIST Cybersecurity Framework (CSF)</a> for program-level security and risk vocabulary.</li>
+        <li><a href="https://attack.mitre.org/">MITRE ATT&amp;CK</a> for adversary behavior, tactics, and detection mapping.</li>
+        <li><a href="https://www.cisecurity.org/controls">CIS Critical Security Controls</a> for practical safeguard categories.</li>
+        <li><a href="https://owasp.org/www-project-application-security-verification-standard/">OWASP Application Security Verification Standard (ASVS)</a> for application security requirements.</li>
+        <li><a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog">CISA Known Exploited Vulnerabilities Catalog (KEV)</a> for real-world vulnerability prioritization context.</li>
+      </ul>
     </main>
     <footer class="site-footer">
       <div class="wrap">
-        <p>Built as an open starting point for security interns. CTFs are practice environments, not complete models of enterprise security work.</p>
+        <p>Security Intern's Field Guide: seeing how CTF skills show up across security teams, systems, and decisions.</p>
       </div>
     </footer>
   </body>

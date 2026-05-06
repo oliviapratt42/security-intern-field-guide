@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>GRC / Risk | Security Intern Field Guide</title>
-    <meta name="description" content="A beginner-friendly map of cybersecurity career branches, enterprise context, and CTF skills that transfer into real work.">
+    <meta name="description" content="A beginner-friendly guide to GRC and risk work, CTF skills that transfer, and standards-oriented references.">
     <link rel="stylesheet" href="../assets/css/style.css">
   </head>
   <body>
@@ -14,53 +14,52 @@
         <a class="brand" href="../index.html">Security Intern Field Guide</a>
         <nav class="site-nav" aria-label="Primary navigation">
           <a href="../index.html">Home</a>
-          <a href="soc-detection.html">Branches</a>
+          <a href="soc-detection.html" aria-current="page">Branches</a>
           <a href="../ctf-skills-map.html">CTF Map</a>
           <a href="../glossary.html">Glossary</a>
         </nav>
       </div>
     </header>
     <main id="content" class="wrap page-shell">
-<h1>GRC / Risk</h1>
-<h2>What this branch does</h2>
-<p>Governance, Risk, and Compliance, often called GRC, helps organizations decide what security should mean, how risk is managed, and how evidence is produced for laws, policies, standards, contracts, and leadership expectations. It is sometimes misunderstood as paperwork-only work. In reality, strong GRC connects security decisions to business priorities.</p>
-<p>GRC professionals help answer questions like: what are we responsible for, which controls matter, how do we know they work, what risk are we accepting, and what evidence would prove our program is improving?</p>
-<h2>Common work</h2>
-<ul>
-<li>Map policies, standards, and controls to actual systems and processes.</li>
-<li>Support audits, assessments, risk reviews, and vendor reviews.</li>
-<li>Track exceptions, control gaps, remediation plans, and accepted risk.</li>
-<li>Help teams understand requirements without burying them in jargon.</li>
-<li>Translate technical risk into business impact.</li>
-<li>Maintain evidence that controls are operating as intended.</li>
-</ul>
-<h2>Concepts to know</h2>
-<p>Useful vocabulary includes risk, likelihood, impact, control, safeguard, policy, standard, procedure, audit, evidence, compliance, exception, residual risk, inherent risk, risk treatment, third-party risk, data classification, privacy, and business continuity. Security+ concepts around governance, risk, compliance, identity, cryptography, resilience, and incident response are especially relevant.</p>
-<p>GRC is not separate from technical security. A control that cannot be implemented, measured, or explained will not protect much. The work is strongest when it stays connected to what systems and people actually do.</p>
-<h2>CTF skills that help</h2>
-<p>Access control challenges help learners understand why authorization and least privilege matter. Cryptography challenges help explain where encryption, hashing, certificates, and key management fit into requirements. Integrated security challenges can help show how a single weakness may affect confidentiality, integrity, availability, legal exposure, and business trust.</p>
-<p>CTFs can also make abstract control language feel real. A policy about secure authentication is easier to understand after seeing how weak authentication can fail.</p>
-<h2>Where CTFs differ from industry</h2>
-<p>CTFs usually focus on technical discovery. GRC focuses on decisions, accountability, evidence, and repeatability. The question is less “can this be exploited?” and more “what risk does this create, who owns it, what control addresses it, and how do we prove the control works?”</p>
-<h2>Beginner next steps</h2>
-<ol>
-<li>Read the NIST Cybersecurity Framework functions and connect each to a real security activity.</li>
-<li>Practice turning a technical vulnerability into a plain-language risk statement.</li>
-<li>Learn the difference between a policy, standard, procedure, and control.</li>
-<li>Pick one CTF scenario and describe which security objective was affected.</li>
-<li>Look at a public breach report and identify governance, process, and technical lessons.</li>
-</ol>
-<h2>Public resources</h2>
-<ul>
-<li><a href="https://www.nist.gov/cyberframework">NIST Cybersecurity Framework</a> for program-level risk language.</li>
-<li><a href="https://www.cisecurity.org/controls">CIS Controls</a> for practical safeguard categories.</li>
-<li><a href="https://www.nist.gov/itl/applied-cybersecurity/nice/nice-cybersecurity-workforce-framework">NIST NICE Framework</a> for workforce context.</li>
-<li><a href="https://www.cisa.gov/cybersecurity-training-exercises">CISA Cybersecurity Training and Exercises</a> for public-sector learning resources.</li>
-</ul>
+      <section class="hero">
+        <p class="eyebrow">Career branch</p>
+        <h1>GRC / Risk</h1>
+        <p class="lede">GRC connects security work to responsibility, controls, evidence, compliance, and the business decisions behind risk.</p>
+      </section>
+
+      <div class="meta">
+        <span class="pill">Good fit if you like structure and translation</span>
+        <span class="pill">CTF fit: access, crypto, integrated</span>
+        <span class="pill">Core habit: connect risk to evidence</span>
+      </div>
+
+      <h2>What this branch does</h2>
+      <p>Governance, Risk, and Compliance helps organizations decide what security should mean, who owns which responsibilities, which controls matter, and what evidence proves the program is working.</p>
+      <p>Strong GRC is not paperwork detached from reality. A control that cannot be implemented, measured, or explained will not protect much. The work is strongest when it stays connected to what systems and people actually do.</p>
+
+      <h2>Common work</h2>
+      <ul>
+        <li>Map policies, standards, and controls to actual systems and processes.</li>
+        <li>Support audits, assessments, risk reviews, and vendor reviews.</li>
+        <li>Track exceptions, control gaps, remediation plans, and accepted risk.</li>
+        <li>Translate technical findings into business impact.</li>
+        <li>Maintain evidence that controls are operating as intended.</li>
+      </ul>
+
+      <h2>CTF skills that transfer</h2>
+      <p>Access-control challenges make least privilege concrete. Cryptography challenges help explain where encryption, hashing, certificates, and key management fit into requirements. Integrated challenges show how one weakness can affect confidentiality, integrity, availability, legal exposure, and trust.</p>
+
+      <h2>Standards and reference frameworks</h2>
+      <ul class="resource-list">
+        <li><a href="https://www.nist.gov/cyberframework">NIST Cybersecurity Framework (CSF)</a> for program-level risk language.</li>
+        <li><a href="https://csrc.nist.gov/publications/detail/sp/800-30/rev-1/final">NIST SP 800-30</a> for risk assessment concepts.</li>
+        <li><a href="https://csrc.nist.gov/projects/risk-management/sp800-53-controls">NIST SP 800-53</a> for security and privacy controls.</li>
+        <li><a href="https://www.cisecurity.org/controls">CIS Critical Security Controls</a> for practical safeguard categories.</li>
+      </ul>
     </main>
     <footer class="site-footer">
       <div class="wrap">
-        <p>Built as an open starting point for security interns. CTFs are practice environments, not complete models of enterprise security work.</p>
+        <p>Security Intern's Field Guide: seeing how CTF skills show up across security teams, systems, and decisions.</p>
       </div>
     </footer>
   </body>

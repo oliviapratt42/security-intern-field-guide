@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cloud / Infrastructure Security | Security Intern Field Guide</title>
-    <meta name="description" content="A beginner-friendly map of cybersecurity career branches, enterprise context, and CTF skills that transfer into real work.">
+    <meta name="description" content="A beginner-friendly guide to cloud and infrastructure security work, CTF skills that transfer, and standards-oriented references.">
     <link rel="stylesheet" href="../assets/css/style.css">
   </head>
   <body>
@@ -14,53 +14,52 @@
         <a class="brand" href="../index.html">Security Intern Field Guide</a>
         <nav class="site-nav" aria-label="Primary navigation">
           <a href="../index.html">Home</a>
-          <a href="soc-detection.html">Branches</a>
+          <a href="soc-detection.html" aria-current="page">Branches</a>
           <a href="../ctf-skills-map.html">CTF Map</a>
           <a href="../glossary.html">Glossary</a>
         </nav>
       </div>
     </header>
     <main id="content" class="wrap page-shell">
-<h1>Cloud / Infrastructure Security</h1>
-<h2>What this branch does</h2>
-<p>Cloud and infrastructure security protects the platforms that applications and teams rely on: networks, servers, containers, identity systems, storage, cloud accounts, pipelines, and managed services. This branch is close to IT operations, DevOps, platform engineering, and security engineering.</p>
-<p>The work is often about secure defaults at scale. Instead of manually checking one machine, teams try to build patterns that make hundreds or thousands of resources easier to secure, monitor, and recover.</p>
-<h2>Common work</h2>
-<ul>
-<li>Review cloud identity, permissions, network exposure, and storage access.</li>
-<li>Harden Linux, Windows, container, and cloud configurations.</li>
-<li>Monitor infrastructure logs for suspicious access or changes.</li>
-<li>Support vulnerability management, patching, backups, and recovery.</li>
-<li>Build guardrails with infrastructure as code and policy automation.</li>
-<li>Partner with platform teams to reduce risky defaults.</li>
-</ul>
-<h2>Concepts to know</h2>
-<p>Key vocabulary includes identity and access management, least privilege, network segmentation, security groups, firewall rules, encryption at rest, encryption in transit, key management, logging, monitoring, vulnerability management, container security, infrastructure as code, shared responsibility, backups, and resilience.</p>
-<p>Security+ concepts around architecture, network security, identity, cryptography, cloud, virtualization, and operations show up constantly. A cloud security mistake is often not a dramatic exploit. It may be a public storage bucket, overpowered service account, missing log source, exposed admin panel, or unpatched internet-facing system.</p>
-<h2>CTF skills that help</h2>
-<p>Intercepting communication helps learners understand protocols, proxies, DNS, TLS, and network boundaries. Access control challenges are directly relevant to identity permissions and privilege escalation. Cryptography challenges help with certificates, secrets, tokens, and key handling. Web security helps with exposed services and application infrastructure. Integrated challenges can help learners connect identity, network, and application weaknesses.</p>
-<p>The strongest transferable skill is asking: what can this identity reach, what can this system expose, and what evidence would show misuse?</p>
-<h2>Where CTFs differ from industry</h2>
-<p>Infrastructure work in organizations is change-managed and shared. You cannot simply poke at production systems because you are curious. The work involves ownership, uptime, automation, cost, compliance, disaster recovery, and coordination with many teams.</p>
-<h2>Beginner next steps</h2>
-<ol>
-<li>Build a small lab with a Linux server and document open ports, users, services, and logs.</li>
-<li>Learn basic cloud IAM vocabulary: user, role, policy, permission, resource, and trust.</li>
-<li>Practice reading firewall or security group rules and explaining what is exposed.</li>
-<li>Learn how TLS certificates are used to protect traffic in transit.</li>
-<li>Compare a CTF privilege escalation path to least-privilege design in a real system.</li>
-</ol>
-<h2>Public resources</h2>
-<ul>
-<li><a href="https://www.nist.gov/cyberframework">NIST Cybersecurity Framework</a> for risk and resilience context.</li>
-<li><a href="https://www.cisecurity.org/controls">CIS Controls</a> for infrastructure safeguard categories.</li>
-<li><a href="https://kubernetes.io/docs/concepts/security/">Kubernetes Security Documentation</a> for container platform concepts.</li>
-<li><a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog">CISA Known Exploited Vulnerabilities Catalog</a> for prioritizing exploited infrastructure risk.</li>
-</ul>
+      <section class="hero">
+        <p class="eyebrow">Career branch</p>
+        <h1>Cloud / Infrastructure Security</h1>
+        <p class="lede">Cloud and infrastructure security protects the platforms, identities, networks, services, and recovery paths that teams rely on.</p>
+      </section>
+
+      <div class="meta">
+        <span class="pill">Good fit if you like systems and scale</span>
+        <span class="pill">CTF fit: traffic, access, crypto</span>
+        <span class="pill">Core habit: know what is exposed</span>
+      </div>
+
+      <h2>What this branch does</h2>
+      <p>This branch sits close to IT operations, DevOps, platform engineering, and security engineering. The work may involve cloud accounts, networks, servers, containers, storage, identity systems, pipelines, backups, and managed services.</p>
+      <p>The center of gravity is secure defaults at scale. Instead of checking one machine by hand, teams build patterns that make hundreds or thousands of resources easier to secure, monitor, and recover.</p>
+
+      <h2>Common work</h2>
+      <ul>
+        <li>Review cloud identity, permissions, network exposure, and storage access.</li>
+        <li>Harden Linux, Windows, container, and cloud configurations.</li>
+        <li>Monitor infrastructure logs for suspicious access or changes.</li>
+        <li>Support vulnerability management, patching, backups, and recovery.</li>
+        <li>Build guardrails with infrastructure as code and policy automation.</li>
+      </ul>
+
+      <h2>CTF skills that transfer</h2>
+      <p>Traffic analysis helps with protocols, proxies, DNS, TLS, and network boundaries. Access-control challenges map well to identity permissions and privilege escalation. Cryptography challenges help with certificates, secrets, tokens, and key handling.</p>
+
+      <h2>Standards and reference frameworks</h2>
+      <ul class="resource-list">
+        <li><a href="https://www.nist.gov/cyberframework">NIST Cybersecurity Framework (CSF)</a> for risk and resilience context.</li>
+        <li><a href="https://www.cisecurity.org/cis-benchmarks">CIS Benchmarks</a> for secure configuration baselines.</li>
+        <li><a href="https://www.cisecurity.org/controls">CIS Critical Security Controls</a> for infrastructure safeguard categories.</li>
+        <li><a href="https://csrc.nist.gov/publications/detail/sp/800-190/final">NIST SP 800-190</a> for application container security guidance.</li>
+      </ul>
     </main>
     <footer class="site-footer">
       <div class="wrap">
-        <p>Built as an open starting point for security interns. CTFs are practice environments, not complete models of enterprise security work.</p>
+        <p>Security Intern's Field Guide: seeing how CTF skills show up across security teams, systems, and decisions.</p>
       </div>
     </footer>
   </body>

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Red Team / Offensive Security | Security Intern Field Guide</title>
-    <meta name="description" content="A beginner-friendly map of cybersecurity career branches, enterprise context, and CTF skills that transfer into real work.">
+    <meta name="description" content="A beginner-friendly guide to offensive security work, CTF skills that transfer, and standards-oriented references.">
     <link rel="stylesheet" href="../assets/css/style.css">
   </head>
   <body>
@@ -14,53 +14,51 @@
         <a class="brand" href="../index.html">Security Intern Field Guide</a>
         <nav class="site-nav" aria-label="Primary navigation">
           <a href="../index.html">Home</a>
-          <a href="soc-detection.html">Branches</a>
+          <a href="soc-detection.html" aria-current="page">Branches</a>
           <a href="../ctf-skills-map.html">CTF Map</a>
           <a href="../glossary.html">Glossary</a>
         </nav>
       </div>
     </header>
     <main id="content" class="wrap page-shell">
-<h1>Red Team / Offensive Security</h1>
-<h2>What this branch does</h2>
-<p>Offensive security uses attacker-informed methods to help organizations understand and reduce risk. The work may include penetration testing, red teaming, adversary emulation, social engineering assessments, vulnerability validation, or control testing. The point is not to “break things” for its own sake. The point is to produce evidence that helps the organization make better security decisions.</p>
-<p>Red teams often test whether detection, response, segmentation, identity controls, and security assumptions hold up against realistic attack paths. Penetration tests are usually more scoped and vulnerability-focused. Both require authorization, rules of engagement, careful documentation, and professional communication.</p>
-<h2>Common work</h2>
-<ul>
-<li>Define scope, authorization, testing windows, and rules of engagement.</li>
-<li>Research targets and identify likely attack paths.</li>
-<li>Validate vulnerabilities safely and document impact.</li>
-<li>Chain lower-severity weaknesses into realistic risk scenarios.</li>
-<li>Communicate findings to technical and nontechnical audiences.</li>
-<li>Debrief defenders so detection and response can improve.</li>
-</ul>
-<h2>Concepts to know</h2>
-<p>Relevant vocabulary includes reconnaissance, exploitation, post-exploitation, privilege escalation, lateral movement, persistence, payload, command and control, rules of engagement, scope, vulnerability validation, compensating controls, and risk rating. Security+ topics around attacks, identity, network services, applications, wireless, cryptography, and incident response all connect here.</p>
-<p>Professional offensive work depends on restraint. A good tester knows when not to continue, how to avoid unnecessary damage, and how to make a finding useful to the organization.</p>
-<h2>CTF skills that help</h2>
-<p>Web security, access control, binary exploitation, reverse engineering, cryptography, and intercepting communication all show up in offensive learning paths. CTFs teach persistence, enumeration, hypothesis testing, and comfort with unfamiliar systems. Binary exploitation and reverse engineering can be useful for specialized roles, but many enterprise offensive roles use them less often than web, identity, cloud, scripting, and reporting skills.</p>
-<p>Integrated security challenges are particularly helpful when they require chaining clues across systems.</p>
-<h2>Where CTFs differ from industry</h2>
-<p>CTFs usually have permission built into the environment and a flag as proof. Industry work needs explicit authorization, written scope, evidence handling, client communication, and cleanup. Real targets may be fragile, legally sensitive, or business-critical. The best offensive work improves defense; it does not merely demonstrate cleverness.</p>
-<h2>Beginner next steps</h2>
-<ol>
-<li>Learn basic web request manipulation with an intercepting proxy.</li>
-<li>Practice writing clear findings, not just solving challenges.</li>
-<li>Study MITRE ATT&amp;CK tactics to understand attack paths as behavior, not tool lists.</li>
-<li>Build a small lab network and practice enumeration legally.</li>
-<li>Learn the difference between vulnerability discovery, exploitation, and risk validation.</li>
-</ol>
-<h2>Public resources</h2>
-<ul>
-<li><a href="https://attack.mitre.org/">MITRE ATT&amp;CK</a> for adversary behavior language.</li>
-<li><a href="https://owasp.org/www-project-web-security-testing-guide/">OWASP Web Security Testing Guide</a> for web testing structure.</li>
-<li><a href="https://portswigger.net/web-security">PortSwigger Web Security Academy</a> for safe web security practice.</li>
-<li><a href="https://www.nist.gov/itl/applied-cybersecurity/nice/nice-cybersecurity-workforce-framework">NIST NICE Framework</a> for workforce role context.</li>
-</ul>
+      <section class="hero">
+        <p class="eyebrow">Career branch</p>
+        <h1>Red Team / Offensive Security</h1>
+        <p class="lede">Offensive security uses authorized attacker-informed testing to validate risk, improve defenses, and make security assumptions visible.</p>
+      </section>
+
+      <div class="meta">
+        <span class="pill">Good fit if you like testing assumptions</span>
+        <span class="pill">CTF fit: web, access, reverse, binary</span>
+        <span class="pill">Core habit: stay inside scope</span>
+      </div>
+
+      <h2>What this branch does</h2>
+      <p>Offensive work may include penetration testing, red teaming, adversary emulation, social engineering assessments, vulnerability validation, or control testing. The point is not to break things for its own sake. The point is to produce evidence that helps the organization make better security decisions.</p>
+      <p>Professional offensive work depends on authorization, restraint, documentation, and clear communication. A good tester knows when to stop, how to avoid unnecessary harm, and how to make a finding useful.</p>
+
+      <h2>Common work</h2>
+      <ul>
+        <li>Define scope, authorization, testing windows, and rules of engagement.</li>
+        <li>Research targets and identify likely attack paths.</li>
+        <li>Validate vulnerabilities safely and document impact.</li>
+        <li>Chain smaller weaknesses into realistic risk scenarios.</li>
+        <li>Debrief defenders so detection and response can improve.</li>
+      </ul>
+
+      <h2>CTF skills that transfer</h2>
+      <p>Web security, access control, traffic analysis, reverse engineering, binary exploitation, and cryptography can all help. CTFs build persistence, enumeration, hypothesis testing, and comfort with unfamiliar systems.</p>
+
+      <h2>Standards and reference frameworks</h2>
+      <ul class="resource-list">
+        <li><a href="https://attack.mitre.org/">MITRE ATT&amp;CK</a> for adversary behavior and emulation language.</li>
+        <li><a href="https://csrc.nist.gov/publications/detail/sp/800-115/final">NIST SP 800-115</a> for technical security testing and assessment guidance.</li>
+        <li><a href="https://owasp.org/www-project-web-security-testing-guide/">OWASP Web Security Testing Guide (WSTG)</a> for web testing methodology.</li>
+      </ul>
     </main>
     <footer class="site-footer">
       <div class="wrap">
-        <p>Built as an open starting point for security interns. CTFs are practice environments, not complete models of enterprise security work.</p>
+        <p>Security Intern's Field Guide: seeing how CTF skills show up across security teams, systems, and decisions.</p>
       </div>
     </footer>
   </body>
